@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* head */
+#container_head {
+    background-color: darkgoldenrod;
+    height: 50px;
+    width: 500px;
+}
+
+.title {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+/* fine  head */
+
+/* footer */
+#container_footer {
+    background-color: rgb(128, 0, 43);
+    height: 50px;
+    width: 500px;
+    color: white;
+}
+/* fine footer */
