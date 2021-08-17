@@ -6,7 +6,7 @@
 
 /* header */
 #container_header {
-    background-color: darkgoldenrod;
+    background-color: #FDBB40;
     height: 10vh;
     width: 110vh;
 }
@@ -56,7 +56,7 @@
 }
 
 .add {
-    color:  rgb(128, 0, 43);
+    color:  #F9395E;
     text-decoration: none;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .btn_calculate {
-    background-color: darkgoldenrod;
+    background-color: #FDBB40;
     color: black;
     display: inline-block;
     margin: 0 10px;
@@ -87,7 +87,7 @@
 
 /* footer */
 #container_footer {
-    background-color: rgb(128, 0, 43);
+    background-color: #F9395E;
     height: 10vh;
     width: 110vh;
     color: white;
