@@ -76,9 +76,12 @@
     margin: 10px 0;
 }
 
-.checkbox-1 {
-    color: #F9395E;
-    margin: 10px;   
+.checkmark {
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #F9395E;
 }
 
 .add {
@@ -126,6 +129,6 @@
 
 .title_price {
     font-size: 25px;
-    margin: 0 20px;
+    margin: 0 50px;
 }
 /* fine footer */
