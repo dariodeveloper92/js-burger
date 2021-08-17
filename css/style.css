@@ -7,8 +7,8 @@
 /* head */
 #container_head {
     background-color: darkgoldenrod;
-    height: 50px;
-    width: 500px;
+    height: 10vh;
+    width: 110vh;
 }
 
 .title {
@@ -18,11 +18,55 @@
 }
 /* fine  head */
 
+/* main */
+#scegli_burger{
+    height: 100vh;
+    width: 110vh;
+    margin: 10px 50px;
+}
+
+.little_box {
+    text-align: center;
+}
+
+.dati_ingredients,
+.coupon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.box_coupon {
+    background-color: lightyellow;
+    color: gray;
+    width: 300px;
+}
+
+.container_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_calculate {
+    background-color: darkgoldenrod;
+    color: black;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+/* fine main */
+
 /* footer */
 #container_footer {
     background-color: rgb(128, 0, 43);
-    height: 50px;
-    width: 500px;
+    height: 10vh;
+    width: 110vh;
     color: white;
 }
 /* fine footer */
