@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-/* head */
-#container_head {
+/* header */
+#container_header {
     background-color: darkgoldenrod;
     height: 10vh;
     width: 110vh;
@@ -16,7 +16,14 @@
     color: black;
     text-align: center;
 }
-/* fine  head */
+
+.img_burger {
+    width: 100px;
+    /* object-fit: cover; */
+    float: right;
+    margin: 0; 
+}
+/* fine  header */
 
 /* main */
 #scegli_burger{
@@ -35,6 +42,22 @@
     justify-content: space-around;
     align-items: center;
     margin: 15px 0;
+}
+
+.img_ingredients {
+    width: 50px;
+    object-fit: cover;
+    float: left;
+    margin: 10px 15%;
+}
+
+.radio-margin {
+    margin: 10px;
+}
+
+.add {
+    color:  rgb(128, 0, 43);
+    text-decoration: none;
 }
 
 .box_coupon {
