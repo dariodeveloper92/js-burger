@@ -22,77 +22,75 @@
     <main>
         <div id="scegli_burger">
             <!-- box nome burger -->
-            <input class="little_box" id="burger" type="text" name="nome_burger" placeholder="Name Your Burger">
-
-            <br>
-
-            <h3>Ingredients</h3>
-
-             <!-- Ingredients -->
-             <div class="dati_ingredients">
-                <!-- Ingredients -->
-                <img class="img_ingredients"  src="img/cheese.svg" alt="img cheese">
-                <label class="burgundy" for="nome">Cheese</label>
-                <!-- pulsante add -->
-                <div class="radio-margin">
-                    <input type="radio" class="radio-1">
-                    <a href="#" class="add">add</a>
-                </div>
-                <!-- fine pulsante add -->
-                <img class="img_ingredients"  src="img/tomato.svg" alt="img tomato">
-                <label class="burgundy" for="km">Tomato</label>
-                <!-- pulsante add -->
-                <div class="radio-margin">
-                    <input type="radio" class="radio-1">
-                    <a href="#" class="add">add</a>
-                </div>
-                <!-- fine pulsante add -->
+            <div id="burger">
+                <input class="little_box" id="burger_name" type="text" name="nome_burger" placeholder="Name Your Burger">
             </div>
-
-            <div class="dati_ingredients">
-                <!-- Ingredients -->
-                <img class="img_ingredients"  src="img/fried-egg.svg" alt="img egg">
-                <label class="burgundy" for="nome">Egg</label>
-                <!-- pulsante add -->
-                <div class="radio-margin">
-                    <input type="radio" class="radio-1">
+            <!-- Ingredients -->
+             <div id="ingredient">
+                <h3 class="dati">Ingredients</h3>
+                <div class="dati_ingredients">
+                    <!-- Cheese -->
+                    <img class="img_ingredients"  src="img/cheese.svg" alt="img cheese">
+                    <label for="nome">Cheese</label>
+                    <!-- pulsante add -->
+                    <input type="checkbox" class="checkbox-1">
+                    <br>
                     <a href="#" class="add">add</a>
+                    <!-- fine pulsante add -->
+                    <!-- fine Cheese -->
+                    <!-- Tomato -->
+                    <img class="img_ingredients"  src="img/tomato.svg" alt="img tomato">
+                    <label for="km">Tomato</label>
+                    <!-- pulsante add -->
+                    <input type="checkbox" class="checkbox-1">
+                        <a href="#" class="add">add</a>
+                    <!-- fine pulsante add -->
+                    <!-- fine Tomato -->
                 </div>
-                <!-- fine pulsante add -->
-                <img class="img_ingredients"  src="img/lettuce.svg" alt="img lettuce">
-                <label class="burgundy" for="km">Lettuce</label>
-                <!-- pulsante add -->
-                <div class="radio-margin">
-                    <input type="radio" class="radio-1">
-                    <a href="#" class="add">add</a>
+    
+                <div class="dati_ingredients">
+                    <!-- Egg -->
+                    <img class="img_ingredients"  src="img/fried-egg.svg" alt="img egg">
+                    <label for="nome">Egg</label>
+                    <!-- pulsante add -->
+                    <input type="checkbox" class="checkbox-1">
+                        <a href="#" class="add">add</a>
+                    <!-- fine pulsante add -->
+                    <!-- fine Egg -->
+                    <!-- Lettuce -->
+                    <img class="img_ingredients"  src="img/lettuce.svg" alt="img lettuce">
+                    <label for="km">Lettuce</label>
+                    <!-- pulsante add -->
+                    <input type="checkbox" class="checkbox-1">
+                        <a href="#" class="add">add</a>
+                    <!-- fine pulsante add -->
+                    <!-- fine Lettuce -->
                 </div>
-                <!-- fine pulsante add -->
-            </div>
-
-            <div class="dati_ingredients">
-                <!-- Ingredients -->
-                <img class="img_ingredients"  src="img/mustard.svg" alt="img mustard">
-                <label class="burgundy" for="nome">Mustard</label>
-                <!-- pulsante add -->
-                <div class="radio-margin">
-                    <input type="radio" class="radio-1">
-                    <a href="#" class="add">add</a>
+    
+                <div class="dati_ingredients">
+                    <!-- Mustard -->
+                    <img class="img_ingredients"  src="img/mustard.svg" alt="img mustard">
+                    <label for="nome">Mustard</label>
+                    <!-- pulsante add -->
+                    <input type="checkbox" class="checkbox-1">
+                        <a href="#" class="add">add</a>
+                    <!-- fine pulsante add -->
+                    <!-- fine Mustard -->
+                    <!-- Ketchup -->
+                    <img class="img_ingredients"  src="img/ketchup.svg" alt="img Ketchup">
+                    <label for="km">Ketchup</label>
+                    <!-- pulsante add -->
+                    <input type="checkbox" class="checkbox-1">
+                        <a href="#" class="add">add</a>
+                    <!-- fine pulsante add -->
+                    <!-- fine Ketchup -->
                 </div>
-                <!-- fine pulsante add -->
-                <img class="img_ingredients"  src="img/ketchup.svg" alt="img Ketchup">
-                <label class="burgundy" for="km">Ketchup</label>
-                <!-- pulsante add -->
-                <div class="radio-margin">
-                    <input type="radio" class="radio-1">
-                    <a href="#" class="add">add</a>
-                </div>
-                <!-- fine pulsante add -->
-            </div>
+             </div>
             <!-- fine Ingredients -->
 
             <!-- coupon -->
             <div class="coupon">
-                <h5>Discount Coupon</h5>
+                <h5 class="discount_coupon">Discount Coupon</h5>
                 <!-- box nome burger -->
                 <input class="box_coupon" id="coupon_code" type="text" name="coupon" placeholder="write coupon">
             </div>
