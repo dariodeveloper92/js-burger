@@ -7,29 +7,30 @@
 /* header */
 #container_header {
     background-color: #FDBB40;
-    height: 10vh;
-    width: 110vh;
+    height: 80px;
+    width: 750px;
 }
 
 .title {
     font-size: 30px;
     color: black;
-    text-align: center;
+    margin: 0 20px;
 }
 
+
 .img_burger {
-    width: 100px;
+    width: 120px;
     /* object-fit: cover; */
     float: right;
-    margin: 0; 
+    margin: -45px; 
 }
 /* fine  header */
 
 /* main */
 #scegli_burger{
-    height: 100vh;
-    width: 110vh;
-    margin: 10px 50px;
+    height: 560px;
+    width: 750px;
+    background-color: lightblue;
 }
 
 .little_box {
@@ -88,8 +89,13 @@
 /* footer */
 #container_footer {
     background-color: #F9395E;
-    height: 10vh;
-    width: 110vh;
+    height: 80px;
+    width: 750px;
     color: white;
+}
+
+.title_price {
+    font-size: 25px;
+    margin: 0 20px;
 }
 /* fine footer */
