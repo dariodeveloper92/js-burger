@@ -7,112 +7,124 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- fine css -->
+    <!-- media query css -->
+    <link rel="stylesheet" href="css/media-query.css">
+    <!-- fine media query css -->
     <title>Create Your Burger </title>
 </head>
 <body>
     <!-- head -->
     <header>
-        <div id="container_header">
-            <h1 class="title">Create Your Burger</h1>
-            <img class="img_burger"  src="img/burger-top.png" alt="img burger">
+        <div id="header">
+            <div id="container_header">
+                <h1 class="title">Create Your Burger</h1>
+                <img class="img_burger"  src="img/burger-top.png" alt="img burger">
+            </div>
+            <div id="container_header_right"></div>
         </div>
     </header>
     <!-- fine head -->
     <!-- main -->
     <main>
-        <div id="scegli_burger">
-            <!-- box nome burger -->
-            <div id="burger">
-                <input class="little_box" id="burger_name" type="text" name="nome_burger" placeholder="Name Your Burger">
-            </div>
-            <!-- Ingredients -->
-             <div id="ingredient">
-                <h3 class="dati">Ingredients</h3>
-                <div class="dati_ingredients">
-                    <!-- Cheese -->
-                    <img class="img_ingredients"  src="img/cheese.svg" alt="img cheese">
-                    <label id="cheese" for="cheese">Cheese</label>
-                    <!-- pulsante add -->
-                    <input type="checkbox" class="checkmark">
-                    <br>
-                    <a href="#" class="add">add</a>
-                    <!-- fine pulsante add -->
-                    <!-- fine Cheese -->
-                    <!-- Tomato -->
-                    <img class="img_ingredients"  src="img/tomato.svg" alt="img tomato">
-                    <label id="tomato" for="tomato">Tomato</label>
-                    <!-- pulsante add -->
-                    <input type="checkbox" class="checkmark">
-                        <a href="#" class="add">add</a>
-                    <!-- fine pulsante add -->
-                    <!-- fine Tomato -->
-                </div>
-    
-                <div class="dati_ingredients">
-                    <!-- Egg -->
-                    <img class="img_ingredients"  src="img/fried-egg.svg" alt="img egg">
-                    <label id="egg" for="egg">Egg</label>
-                    <!-- pulsante add -->
-                    <input type="checkbox" class="checkmark">
-                        <a href="#" class="add">add</a>
-                    <!-- fine pulsante add -->
-                    <!-- fine Egg -->
-                    <!-- Lettuce -->
-                    <img class="img_ingredients"  src="img/lettuce.svg" alt="img lettuce">
-                    <label id="lettuce" for="lettuce">Lettuce</label>
-                    <!-- pulsante add -->
-                    <input type="checkbox" class="checkmark">
-                        <a href="#" class="add">add</a>
-                    <!-- fine pulsante add -->
-                    <!-- fine Lettuce -->
-                </div>
-    
-                <div class="dati_ingredients">
-                    <!-- Mustard -->
-                    <img class="img_ingredients"  src="img/mustard.svg" alt="img mustard">
-                    <label id="mustard" for="mustard">Mustard</label>
-                    <!-- pulsante add -->
-                    <input type="checkbox" class="checkmark">
-                        <a href="#" class="add">add</a>
-                    <!-- fine pulsante add -->
-                    <!-- fine Mustard -->
-                    <!-- Ketchup -->
-                    <img class="img_ingredients"  src="img/ketchup.svg" alt="img Ketchup">
-                    <label id="ketchup" for="ketchup">Ketchup</label>
-                    <!-- pulsante add -->
-                    <input type="checkbox" class="checkmark">
-                        <a href="#" class="add">add</a>
-                    <!-- fine pulsante add -->
-                    <!-- fine Ketchup -->
-                </div>
-             </div>
-            <!-- fine Ingredients -->
-
-            <!-- coupon -->
-            <div class="coupon">
-                <h5 class="discount_coupon">Discount Coupon</h5>
+        <div id="main">
+            <div id="scegli_burger">
                 <!-- box nome burger -->
-                <input class="box_coupon" id="coupon_code" type="text" name="coupon" placeholder="write coupon">
-            </div>
-            <!-- fine coupon -->
-
-            <!-- container_btn -->
-            <div class="container_btn">
-                <div>
-                    <button id="calcolaPrezzo" name="calacolaPrezzo" class="btn_calculate"> calculate </button>
+                <div id="burger">
+                    <input class="little_box" id="burger_name" type="text" name="nome_burger" placeholder="Name Your Burger">
                 </div>
+                <!-- Ingredients -->
+                 <div id="ingredient">
+                    <h3 class="dati">Ingredients</h3>
+                    <div class="dati_ingredients">
+                        <!-- Cheese -->
+                        <img class="img_ingredients"  src="img/cheese.svg" alt="img cheese">
+                        <label id="cheese" for="cheese">Cheese</label>
+                        <!-- pulsante add -->
+                        <input type="checkbox" class="checkmark">
+                        <br>
+                        <a href="#" class="add">add</a>
+                        <!-- fine pulsante add -->
+                        <!-- fine Cheese -->
+                        <!-- Tomato -->
+                        <img class="img_ingredients"  src="img/tomato.svg" alt="img tomato">
+                        <label id="tomato" for="tomato">Tomato</label>
+                        <!-- pulsante add -->
+                        <input type="checkbox" class="checkmark">
+                            <a href="#" class="add">add</a>
+                        <!-- fine pulsante add -->
+                        <!-- fine Tomato -->
+                    </div>
+        
+                    <div class="dati_ingredients">
+                        <!-- Egg -->
+                        <img class="img_ingredients"  src="img/fried-egg.svg" alt="img egg">
+                        <label id="egg" for="egg">Egg</label>
+                        <!-- pulsante add -->
+                        <input type="checkbox" class="checkmark">
+                            <a href="#" class="add">add</a>
+                        <!-- fine pulsante add -->
+                        <!-- fine Egg -->
+                        <!-- Lettuce -->
+                        <img class="img_ingredients"  src="img/lettuce.svg" alt="img lettuce">
+                        <label id="lettuce" for="lettuce">Lettuce</label>
+                        <!-- pulsante add -->
+                        <input type="checkbox" class="checkmark">
+                            <a href="#" class="add">add</a>
+                        <!-- fine pulsante add -->
+                        <!-- fine Lettuce -->
+                    </div>
+        
+                    <div class="dati_ingredients">
+                        <!-- Mustard -->
+                        <img class="img_ingredients"  src="img/mustard.svg" alt="img mustard">
+                        <label id="mustard" for="mustard">Mustard</label>
+                        <!-- pulsante add -->
+                        <input type="checkbox" class="checkmark">
+                            <a href="#" class="add">add</a>
+                        <!-- fine pulsante add -->
+                        <!-- fine Mustard -->
+                        <!-- Ketchup -->
+                        <img class="img_ingredients"  src="img/ketchup.svg" alt="img Ketchup">
+                        <label id="ketchup" for="ketchup">Ketchup</label>
+                        <!-- pulsante add -->
+                        <input type="checkbox" class="checkmark">
+                            <a href="#" class="add">add</a>
+                        <!-- fine pulsante add -->
+                        <!-- fine Ketchup -->
+                    </div>
+                 </div>
+                <!-- fine Ingredients -->
+    
+                <!-- coupon -->
+                <div class="coupon">
+                    <h5 class="discount_coupon">Discount Coupon</h5>
+                    <!-- box nome burger -->
+                    <input class="box_coupon" id="coupon_code" type="text" name="coupon" placeholder="write coupon">
+                </div>
+                <!-- fine coupon -->
+    
+                <!-- container_btn -->
+                <div class="container_btn">
+                    <div>
+                        <button id="calcolaPrezzo" name="calacolaPrezzo" class="btn_calculate"> calculate </button>
+                    </div>
+                </div>
+                <!-- fine container_btn -->
             </div>
-            <!-- fine container_btn -->
+            <div id="scegli_burger_right"></div>
         </div>
     </main>
     <!-- fine main -->
     <!-- footer -->
     <footer>
-        <div id="container_footer">
-            <div id="calcoloPrezzo">
-                <h3 class="title_price">Your Price</h3>
-            <div id="prezzo"> Totale </div>
+        <div id="footer">
+            <div id="container_footer">
+                <div id="calcoloPrezzo">
+                    <h3 class="title_price">Your Price</h3>
+                <div id="prezzo"> Totale </div>
+                </div>
             </div>
+            <div id="container_footer_right"></div>
         </div>
     </footer>
     <!-- fine footer -->

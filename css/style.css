@@ -5,32 +5,53 @@
 }
 
 /* header */
+#header,
+#main,
+#footer {
+    width: 100%;
+    height: 100% ;
+    display: flex;
+    justify-content: space-around;
+}
+
 #container_header {
     background-color: #FDBB40;
     height: 80px;
-    width: 750px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container_header_right {
+    background-color: #ffcb6aec;
+    height: 80px;
+    width: 50%;
 }
 
 .title {
     font-size: 30px;
     color: black;
-    margin: 0 50px;
 }
-
 
 .img_burger {
     width: 120px;
-    /* object-fit: cover; */
-    float: right;
-    margin: -45px; 
+    object-fit: cover;
+    position: absolute;
+    margin: 0 45%;
 }
 /* fine  header */
 
 /* main */
 #scegli_burger{
     height: 560px;
-    width: 750px;
+    width: 50%;
     background-color: lightblue;
+}
+
+#scegli_burger_right {
+    height: 560px;
+    width: 50%;
+    background-color: #ffcb6aec;
 }
 
 #burger {
@@ -41,6 +62,7 @@
 .little_box {
     text-align: center;
     margin: 20px 50px;
+    border: none;
 }
 
 #ingredient {
@@ -54,7 +76,7 @@
 
 .dati_ingredients {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 15px 35px;
 }
@@ -96,6 +118,7 @@
     color: gray;
     width: 450px;
     margin: 0 30px;
+    border: none;
 }
 
 .container_btn {
@@ -103,7 +126,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 750px;
+    width: 50%;
 }
 
 .btn_calculate {
@@ -123,12 +146,23 @@
 #container_footer {
     background-color: #F9395E;
     height: 80px;
-    width: 750px;
+    width: 50%;
     color: white;
+}
+
+#container_footer_right {
+    background-color: #ffcb6aec;
+    height: 80px;
+    width: 50%;
 }
 
 .title_price {
     font-size: 25px;
     margin: 0 50px;
+}
+
+#prezzo {
+    display: flex;
+    justify-content: flex-end;
 }
 /* fine footer */

@@ -7,6 +7,7 @@
 //Prima la logica in italiano e poi traduciamo in codice. console.log() è nostro amico. 
 
 //Quando tutto funziona passate alla parte visiva lavorando al css.
+alert('Benvenuto! Scrivi il tuo panino.');
 
 var btnCalculate = document.getElementById('calcolaPrezzo');
 console.log(btnCalculate);
@@ -27,42 +28,58 @@ btnCalculate.addEventListener('click',
 
         // Calcola il prezzo del burger
         //burger
-        var burger = 5.00;
+        var burger = 70.00;
         //aggiunzioni
-        var cheese = 1.00;
-        var tomato = 1.00;
-        var egg = 1.00;
-        var lattuce = 1.00;
-        var mustard = 1.00;
-        var ketchup = 1.00;
+        var cheese = 25.00;
+        var tomato = 24.00;
+        var egg = 23.00;
+        var lattuce = 22.00;
+        var mustard = 21.00;
+        var ketchup = 20.00;
 
         var prezzo =  burger ;
 
-        if(burger + cheese) {
-            prezzo = burger + cheese;
-            console.log(burger + cheese);
+        let aggiunzionI = [cheese, tomato, egg, lattuce, mustard, ketchup];
+
+        for(i=0; i<aggiunzionI.length; i++) {
+            if(cheese) {
+                prezzo = burger + cheese;
+                console.log(burger + cheese + '$');
+                document.getElementById('prezzo').innerHTML= burger + cheese + '$';
+            }
+            else if(tomato) {
+                prezzo = burger + tomato;
+                console.log(burger + tomato + '$');
+                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
+            }
+            else if(egg) {
+                prezzo = burger + egg;
+                console.log(burger + egg);
+                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
+            }
+            else if(lattuce) {
+                prezzo = burger + lattuce;
+                console.log(burger + lattuce + '$');
+                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
+            }
+            else if(mustard) {
+                prezzo = burger + mustard;
+                console.log(burger + mustard + '$');
+                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
+            }
+            else if(ketchup) {
+                prezzo = burger + ketchup;
+                console.log(burger + ketchup + '$');
+                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
+            }
+            else{
+                prezzo = burger;
+                console.log(burger + '$');
+                document.getElementById('prezzo').innerHTML = burger + '$';
+            }
         }
-        else if(tomato) {
-            prezzo = burger + tomato;
-            console.log(burger + tomato);
-        }
-        else if(egg) {
-            prezzo = burger + egg;
-            console.log(burger + egg);
-        }
-        else if(lattuce) {
-            prezzo = burger + lattuce;
-            console.log(burger + lattuce);
-        }
-        else if(mustard) {
-            prezzo = burger + mustard;
-            console.log(burger + mustard);
-        }
-        else if(ketchup) {
-            prezzo = burger + ketchup;
-            console.log(burger + ketchup);
-        }
+        
+        
     }
 )
-    //PREZZO BURGER
-    document.getElementById("prezzo").innerHTML = prezzo + '€';
+    
