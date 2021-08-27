@@ -20,8 +20,8 @@ btnCalculate.addEventListener('click',
         var lattuce = document.getElementById('lettuce').value;
         var mustard = document.getElementById('mustard').value;
         var ketchup = document.getElementById('ketchup').value;
+        //var couponCode = document.getElementById('coupon_code').value;
          
-
         var calcoloPrezzo = document.getElementById('calcoloPrezzo');
         console.log(calcoloPrezzo);
         calcoloPrezzo.style.display = "block";
@@ -78,8 +78,21 @@ btnCalculate.addEventListener('click',
                 document.getElementById('prezzo').innerHTML = burger + '$';
             }
         }
+
         
-        
+        /*if(couponCode) {
+            prezzo = prezzo * 0.8;
+        }
+        else {
+            prezzo = prezzo;
+        }*/
     }
 )
+
+//Funzione per le aggiunzioni
+const myButton = document.querySelector('button');
+
+myButton.onclick = function () {
+    console.log(prezzo + cheese);    
+}
     
