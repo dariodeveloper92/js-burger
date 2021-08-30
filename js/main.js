@@ -28,7 +28,7 @@ btnCalculate.addEventListener('click',
         var lattuce = document.getElementById('lettuce').value;
         var mustard = document.getElementById('mustard').value;
         var ketchup = document.getElementById('ketchup').value;
-        //var couponCode = document.getElementById('coupon_code').value;
+        var couponCode = document.getElementById('coupon_code').value;
          
         var calcoloPrezzo = document.getElementById('calcoloPrezzo');
         console.log(calcoloPrezzo);
@@ -47,8 +47,10 @@ btnCalculate.addEventListener('click',
 
         var prezzo =  burger ;
 
-        let aggiunzionI = [cheese, tomato, egg, lattuce, mustard, ketchup];
+        //Array aggiunzioni
+        var aggiunzionI = [cheese, tomato, egg, lattuce, mustard, ketchup];
 
+        //Ciclo for per le aggiunzioni
         for(i=0; i<aggiunzionI.length; i++) {
             if(aggiunzionI.length) {
                 prezzo = burger + aggiunzionI.length;
@@ -85,21 +87,21 @@ btnCalculate.addEventListener('click',
                 prezzo = burger + ketchup;
                 console.log(burger + ketchup + '$');
                 document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
-            }*/
+            }
             else{
                 prezzo = burger;
                 console.log(burger + '$');
                 document.getElementById('prezzo').innerHTML = burger + '$';
-            }
+            }*/
         }
 
         
-        /*if(couponCode) {
+        if(couponCode == '') {
             prezzo = prezzo * 0.8;
         }
         else {
             prezzo = prezzo;
-        }*/
+        }
     }
 )
 
