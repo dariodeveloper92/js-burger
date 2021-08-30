@@ -13,7 +13,7 @@ alert('Benvenuto! Scrivi il tuo panino.');
 const myInput = document.querySelector('input');
 
 myInput.onclick = function () {
-    alert('Inserire panino');    
+    alert('Inserire panino');   
 }
 
 //CALCOLO PREZZO PANINO
@@ -28,8 +28,9 @@ btnCalculate.addEventListener('click',
         var lattuce = document.getElementById('lettuce').value;
         var mustard = document.getElementById('mustard').value;
         var ketchup = document.getElementById('ketchup').value;
-        var couponCode = document.getElementById('coupon_code').value;
-         
+        //var couponCode = document.getElementById('coupon_code').value;
+        var couponCode = ['SCONTO']; //SCONTO
+        
         var calcoloPrezzo = document.getElementById('calcoloPrezzo');
         console.log(calcoloPrezzo);
         calcoloPrezzo.style.display = "block";
@@ -50,57 +51,28 @@ btnCalculate.addEventListener('click',
         //Array aggiunzioni
         var aggiunzionI = [cheese, tomato, egg, lattuce, mustard, ketchup];
 
+        //prendiamo i valori dai checkbox
+        var checkboxes = document.getElementsByClassName('checkmark');
+        console.log(checkboxes);
+        document.getElementById('prezzo').innerHTML= prezzo + '$';
+
         //Ciclo for per le aggiunzioni
-        for(i=0; i<aggiunzionI.length; i++) {
+        for(var i = 0; i< aggiunzionI.length; i++) {
             if(aggiunzionI.length) {
-                prezzo = burger + aggiunzionI.length;
+                var prezzo = burger + aggiunzionI[i];
                 console.log(prezzo);
                 document.getElementById('prezzo').innerHTML= prezzo + '$';
             }
-            /*
-            if(cheese) {
-                prezzo = burger + cheese;
-                console.log(burger + cheese + '$');
-                document.getElementById('prezzo').innerHTML= burger + cheese + '$';
-            }
-            else if(tomato) {
-                prezzo = burger + tomato;
-                console.log(burger + tomato + '$');
-                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
-            }
-            else if(egg) {
-                prezzo = burger + egg;
-                console.log(burger + egg);
-                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
-            }
-            else if(lattuce) {
-                prezzo = burger + lattuce;
-                console.log(burger + lattuce + '$');
-                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
-            }
-            else if(mustard) {
-                prezzo = burger + mustard;
-                console.log(burger + mustard + '$');
-                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
-            }
-            else if(ketchup) {
-                prezzo = burger + ketchup;
-                console.log(burger + ketchup + '$');
-                document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
-            }
-            else{
-                prezzo = burger;
-                console.log(burger + '$');
-                document.getElementById('prezzo').innerHTML = burger + '$';
-            }*/
         }
 
-        
-        if(couponCode == '') {
+        if(couponCode == 'SCONTO') {
             prezzo = prezzo * 0.8;
+            console.log(prezzo + '$' + ' Aggiunto sconto');
+            document.getElementById('prezzo').innerHTML= prezzo + '$';
         }
         else {
-            prezzo = prezzo;
+            console.log(prezzo + '$' + ' senza sconto');
+            document.getElementById('prezzo').innerHTML= prezzo + '$';
         }
     }
 )
@@ -109,7 +81,8 @@ btnCalculate.addEventListener('click',
 const myButton = document.querySelector('button');
 
 myButton.onclick = function () {
-    console.log('25$ +70$');    
-    document.getElementById('prezzo').innerHTML = '91 $';
+    console.log('25$ + 70$');    
 }
+
+document.getElementById('prezzo').innerHTML = '91 $';
     
