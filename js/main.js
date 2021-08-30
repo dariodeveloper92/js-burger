@@ -9,6 +9,14 @@
 //Quando tutto funziona passate alla parte visiva lavorando al css.
 alert('Benvenuto! Scrivi il tuo panino.');
 
+//Funzione per le nome del panino
+const myInput = document.querySelector('input');
+
+myInput.onclick = function () {
+    alert('Inserire panino');    
+}
+
+//CALCOLO PREZZO PANINO
 var btnCalculate = document.getElementById('calcolaPrezzo');
 console.log(btnCalculate);
 
@@ -42,6 +50,12 @@ btnCalculate.addEventListener('click',
         let aggiunzionI = [cheese, tomato, egg, lattuce, mustard, ketchup];
 
         for(i=0; i<aggiunzionI.length; i++) {
+            if(aggiunzionI.length) {
+                prezzo = burger + aggiunzionI.length;
+                console.log(prezzo);
+                document.getElementById('prezzo').innerHTML= prezzo + '$';
+            }
+            /*
             if(cheese) {
                 prezzo = burger + cheese;
                 console.log(burger + cheese + '$');
@@ -71,7 +85,7 @@ btnCalculate.addEventListener('click',
                 prezzo = burger + ketchup;
                 console.log(burger + ketchup + '$');
                 document.getElementById('prezzo').innerHTML=burger + cheese + ' $';
-            }
+            }*/
             else{
                 prezzo = burger;
                 console.log(burger + '$');
@@ -93,6 +107,7 @@ btnCalculate.addEventListener('click',
 const myButton = document.querySelector('button');
 
 myButton.onclick = function () {
-    console.log(prezzo + cheese);    
+    console.log('25$ +70$');    
+    document.getElementById('prezzo').innerHTML = '91 $';
 }
     
