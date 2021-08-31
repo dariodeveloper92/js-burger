@@ -9,11 +9,11 @@
 //Quando tutto funziona passate alla parte visiva lavorando al css.
 alert('Benvenuto! Scrivi il tuo panino.');
 
-//Funzione per le nome del panino
+//Funzione "nome del panino"
 const myInput = document.querySelector('input');
 
-myInput.onclick = function () {
-    alert('Inserire panino');   
+myInput.onclick = function () { //Clicco sul box per inserire il nome del panino
+    alert('Inserire il nome del panino');   //Alert: Inserire il nome del panino
 }
 
 //CALCOLO PREZZO PANINO
@@ -28,8 +28,9 @@ btnCalculate.addEventListener('click',
         var lattuce = document.getElementById('lettuce').value;
         var mustard = document.getElementById('mustard').value;
         var ketchup = document.getElementById('ketchup').value;
-        //var couponCode = document.getElementById('coupon_code').value;
-        var couponCode = ['SCONTO']; //SCONTO
+        var couponCode = document.getElementById('coupon_code').value;
+        
+        var coupon_code = ['SCONTO']; //SCONTO
         
         var calcoloPrezzo = document.getElementById('calcoloPrezzo');
         console.log(calcoloPrezzo);
@@ -38,18 +39,8 @@ btnCalculate.addEventListener('click',
         // Calcola il prezzo del burger
         //burger
         var burger = 70.00;
-        //aggiunzioni
-        var cheese = 25.00;
-        var tomato = 24.00;
-        var egg = 23.00;
-        var lattuce = 22.00;
-        var mustard = 21.00;
-        var ketchup = 20.00;
-
+        
         var prezzo =  burger ;
-
-        //Array aggiunzioni
-        var aggiunzionI = [cheese, tomato, egg, lattuce, mustard, ketchup];
 
         //prendiamo i valori dai checkbox
         var checkboxes = document.getElementsByClassName('checkmark');
@@ -57,9 +48,9 @@ btnCalculate.addEventListener('click',
         document.getElementById('prezzo').innerHTML= prezzo + '$';
 
         //Ciclo for per le aggiunzioni
-        for(var i = 0; i< aggiunzionI.length; i++) {
-            if(aggiunzionI.length) {
-                var prezzo = burger + aggiunzionI[i];
+        for(var i = 0; i< checkboxes.length; i++) {
+            if( checkboxes[i].checked) {
+                prezzo = prezzo + parseInt(checkboxes[i].value);
                 console.log(prezzo);
                 document.getElementById('prezzo').innerHTML= prezzo + '$';
             }
@@ -77,12 +68,13 @@ btnCalculate.addEventListener('click',
     }
 )
 
-//Funzione per le aggiunzioni
-const myButton = document.querySelector('button');
+//Button Annulla----------------------------------------------------------
+var btnAnnulla = document.getElementById('annulla');
 
-myButton.onclick = function () {
-    console.log('25$ + 70$');    
-}
-
-document.getElementById('prezzo').innerHTML = '91 $';
+btnAnnulla.addEventListener('click',
+    function() {
+        var biglietto_box = document.getElementById('biglietto');
+        prezzo.style.display = 'none';
+    }
+)
     
